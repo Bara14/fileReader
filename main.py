@@ -2,7 +2,7 @@ import mimetypes
 from CSV import CSVReader
 from PDF import PDFReader
 from TXT import TXTReader
-from DOCX import DOCReader
+from DOCX import DOCXReader
 
 file = input("Please, provide full path to the file:")
 ext = mimetypes.guess_type(file)
