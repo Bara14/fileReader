@@ -1,12 +1,12 @@
 import mimetypes
-from csv import CsvReader
+from typecsv import CsvReader
 from pdf import PdfReader
 from txt import TxtReader
 from docx import DocxReader
 
 file = input("Please, provide full path to the file:")
 ext = mimetypes.guess_type(file)
-
+print(ext)
 if ext[0] == "application/pdf":
     reader = PdfReader()
 elif ext[0] == "text/csv":
