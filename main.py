@@ -1,9 +1,11 @@
 import mimetypes
+
+from Service.reader import Reader
 from typecsv import CsvReader
 from pdf import PdfReader
 from txt import TxtReader
 from docx import DocxReader
-
+'''
 file = input("Please, provide full path to the file:")
 ext = mimetypes.guess_type(file)
 print(ext)
@@ -15,5 +17,7 @@ elif ext[0] == "application/vnd.openxmlformats-officedocument.wordprocessingml.d
     reader = DocxReader()
 elif ext[0] == "text/plain" or "application/vnd.oasis.opendocument.text":
     reader = TxtReader()
-
-file = reader.load_data_source(file)
+'''
+reader = Reader()
+file = reader.readFile('Files/addresses.csv')
+reader.print_text(file)
