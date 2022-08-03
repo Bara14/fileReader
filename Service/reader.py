@@ -1,8 +1,8 @@
 import mimetypes
-from typecsv import CsvReader
-from pdf import PdfReader
-from txt import TxtReader
-from docx import DocxReader
+from Parsers.typecsv import CsvReader
+from Parsers.pdf import PdfReader
+from Parsers.txt import TxtReader
+from Parsers.typedocx import DocxReader
 
 class Reader:
     def readFile(self, file):
