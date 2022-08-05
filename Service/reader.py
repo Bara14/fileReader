@@ -4,6 +4,7 @@ from Parsers.pdf import PdfReader
 from Parsers.txt import TxtReader
 from Parsers.typedocx import DocxReader
 
+
 class Reader:
     def readFile(self, file):
         ext = mimetypes.guess_type(file)
