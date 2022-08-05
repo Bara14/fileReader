@@ -1,7 +1,6 @@
 from Service.reader import Reader
 import os
 
-
 env_var = os.environ
 os.environ['FILE_HOME'] = '/home/rkubi/PycharmProjects/fileReader/Files/'
 pathToFolder = os.listdir(os.environ['FILE_HOME'])
