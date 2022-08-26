@@ -1,7 +1,7 @@
-from Service.reader import start_parsing
+from service.reader import start_parsing
 import os
 
-from Service.utils.file_utils import get_file_type
+from service.utils.file_utils import get_file_type
 
 
 pathToFolder = os.listdir(os.environ['FILE_HOME'])

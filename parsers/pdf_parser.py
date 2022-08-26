@@ -1,6 +1,7 @@
 import pdfplumber
 from parsers.base_parser import BaseParser
 
+
 class PdfReader(BaseParser):
 
     def load_data_source(self, file_type, file_path) -> None:
@@ -14,3 +15,5 @@ class PdfReader(BaseParser):
         if file_type.value > 0:
             return True
         return False
+
+

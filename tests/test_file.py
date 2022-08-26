@@ -1,6 +1,6 @@
 import os
 import pytest
-from Service.reader import Reader
+from service.reader import Reader
 from main import pathToFolder
 
 
