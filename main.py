@@ -1,8 +1,12 @@
-from Service.reader import Reader
+from Service.reader import start_parsing
 import os
+
+from Service.utils.file_utils import get_file_type
+
+
 pathToFolder = os.listdir(os.environ['FILE_HOME'])
 
 for file in pathToFolder:
-    reader = Reader()
-    read_object = reader.readFile(os.environ['FILE_HOME']+file)
-    read_object.load_data_source(os.environ['FILE_HOME']+file)
+    file_path = os.path.join(os.environ['FILE_HOME'], file)
+    file_type = get_file_type(file_path)
+    start_parsing(file_type, file_path)
