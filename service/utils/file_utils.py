@@ -23,3 +23,4 @@ def get_file_type(file_path) -> FileType:
     return file_type
 
 
+
