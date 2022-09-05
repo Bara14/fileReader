@@ -37,26 +37,8 @@ def test_TXT_type():
     file_type = get_file_type('tests/Files/sdsds.txt')
     assert file_type == FileType.TXT
 
-
-'''
-# czy istnieje zmienna systemowa czy nie
-# czy wykrywanie plikow dziala
-# dajesz plik z tekstem i sprawdzamy czy zwraca to co jest w srodku
+def test_return_context():
+    start_parsing(FileType.TXT, '/home/rkubi/PycharmProjects/fileReader/tests/Files/sdsds.txt')
+    assert start_parsing == 'asdf'
 
 
-# def test_file_not_found():
-#     with pytest.raises(FileNotFoundError):
-#        for file in pathToFolder:
-#             reader = Reader()
-#             read_object = reader.readFile('sss'+ file)
-#             read_object.load_data_source('sss' + file)
-
-
-# def test_env_variable_not_found():
-#     with pytest.raises(KeyError):
-#         for file in pathToFolder:
-#             reader = Reader()
-#             read_object = reader.readFile(os.environ['FILE_HOMEa'] + file)
-#             read_object.load_data_source(os.environ['FILE_HOMEa'] + file)
-
-'''
