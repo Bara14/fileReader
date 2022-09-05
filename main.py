@@ -1,6 +1,5 @@
 from service.reader import start_parsing
 import os
-
 from service.utils.file_utils import get_file_type
 
 
